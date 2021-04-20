@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/montserrat-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("../assets/fonts/montserrat-v15-latin-regular.woff") format("woff"), url("../assets/fonts/montserrat-v15-latin-regular.ttf") format("truetype"), url("../assets/fonts/montserrat-v15-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/montserrat-v15-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v15-latin-500.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v15-latin-500.woff2") format("woff2"), url("../assets/fonts/montserrat-v15-latin-500.woff") format("woff"), url("../assets/fonts/montserrat-v15-latin-500.ttf") format("truetype"), url("../assets/fonts/montserrat-v15-latin-500.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/montserrat-v15-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v15-latin-600.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v15-latin-600.woff2") format("woff2"), url("../assets/fonts/montserrat-v15-latin-600.woff") format("woff"), url("../assets/fonts/montserrat-v15-latin-600.ttf") format("truetype"), url("../assets/fonts/montserrat-v15-latin-600.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-800 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/montserrat-v15-latin-800.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-v15-latin-800.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-v15-latin-800.woff2") format("woff2"), url("../assets/fonts/montserrat-v15-latin-800.woff") format("woff"), url("../assets/fonts/montserrat-v15-latin-800.ttf") format("truetype"), url("../assets/fonts/montserrat-v15-latin-800.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-alternates-regular - latin */
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/montserrat-alternates-v12-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-alternates-v12-latin-regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-alternates-v12-latin-regular.woff2") format("woff2"), url("../assets/fonts/montserrat-alternates-v12-latin-regular.woff") format("woff"), url("../assets/fonts/montserrat-alternates-v12-latin-regular.ttf") format("truetype"), url("../assets/fonts/montserrat-alternates-v12-latin-regular.svg#MontserratAlternates") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-alternates-800 - latin */
+@font-face {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/montserrat-alternates-v12-latin-800.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../assets/fonts/montserrat-alternates-v12-latin-800.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/montserrat-alternates-v12-latin-800.woff2") format("woff2"), url("../assets/fonts/montserrat-alternates-v12-latin-800.woff") format("woff"), url("../assets/fonts/montserrat-alternates-v12-latin-800.ttf") format("truetype"), url("../assets/fonts/montserrat-alternates-v12-latin-800.svg#MontserratAlternates") format("svg");
+  /* Legacy iOS */
+}
+body {
+  background-image: url(../assets/img/back.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.header .header__logo img {
+  width: 150px;
+  border-radius: 50%;
+}
+.header .header__title {
+  font-family: "Montserrat Alternates";
+  font-size: 4.2rem;
+  font-weight: 800;
+  line-height: 8rem;
+  letter-spacing: 0.01em;
+  color: #94643c;
+}
+@media (max-width: 768px) {
+  .header .header__title {
+    font-size: 3.2rem;
+    line-height: 6rem;
+  }
+}
+@media (max-width: 639px) {
+  .header .header__title {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 414px) {
+  .header .header__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.socials {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+.socials .socials__messenger {
+  padding: 20px 20px;
+}
+.socials .socials__button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.socials .watsapp {
+  background-color: #009846;
+}
+.socials .viber {
+  background-color: #665ca7;
+}
+.socials .socials__logo {
+  padding: 10px;
+}
+.socials .socials__logo img {
+  width: 40px;
+  height: 40px;
+}
+.socials .socials__title {
+  flex: 1;
+  padding-right: 60px;
+  font-family: "Montserrat";
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 7rem;
+  letter-spacing: 0.01em;
+  color: white;
+}
+@media (max-width: 768px) {
+  .socials .socials__title {
+    font-size: 2.2rem;
+    line-height: 5rem;
+  }
+}
+@media (max-width: 639px) {
+  .socials .socials__title {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 414px) {
+  .socials .socials__title {
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .socials .socials__title {
+    padding-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
